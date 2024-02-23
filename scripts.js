@@ -1,5 +1,5 @@
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function();){
     const homeButton = document.querySelector('nav ul li:nth-child(1) a');
     const aboutButton = document.querySelector('nav ul li:nth-child(2) a');
     const contactButton = document.querySelector('nav ul li:nth-child(3) a');
@@ -8,11 +8,14 @@ document.addEventListener("DOMContentLoaded", function() {
     aboutButton.addEventListener('click', scrollToSection);
     contactButton.addEventListener('click', scrollToSection);
 
-    function scrollToSection(event) {
+    function scrollToSection(event) 
+    {
         event.preventDefault();
         const targetId = event.target.getAttribute('href').substring(1);
         const targetSection = document.getElementById(targetId);
+        if (targetSection) {
         targetSection.scrollIntoView({ behavior: 'smooth' });
     }
-});
+
+&rbrace;;
 </script>
