@@ -1,21 +1,26 @@
-<script>
-document.addEventListener("DOMContentLoaded", function();){
-    const homeButton = document.querySelector('nav ul li:nth-child(1) a');
-    const aboutButton = document.querySelector('nav ul li:nth-child(2) a');
-    const contactButton = document.querySelector('nav ul li:nth-child(3) a');
-
-    homeButton.addEventListener('click', scrollToSection);
-    aboutButton.addEventListener('click', scrollToSection);
-    contactButton.addEventListener('click', scrollToSection);
-
-    function scrollToSection(event) 
-    {
-        event.preventDefault();
-        const targetId = event.target.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
-        if (targetSection) {
-        targetSection.scrollIntoView({ behavior: 'smooth' });
+class CssPropControl {
+    constructor(element){
+        this.element = element;
     }
+    get(varName) {
+        return getComputedStyle(this.element).getPropertyValue(varName);
+    }
+    set(varName, val) {
+        return this.element.style.setProperty(varName, val)
+    }
+}
 
-&rbrace;;
-</script>
+const bodyCssProps = new CssPropControl(document.body);
+
+let toggle = document.querySelector('#dark-mode-toggle');
+
+toggle.addEventListener('click', () => {
+    let mode
+        if(toggle.checked) { 
+            mode = 'dark';
+        } else {
+            mode = 'light';
+        };
+    bodyCssProps.set('--background', bodyCssProps.get(`--${mode}-background`));
+    bodyCssProps.set('--primary', bodyCssProps.get(`--${mode}-primary`));
+});
