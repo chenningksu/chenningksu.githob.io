@@ -132,10 +132,12 @@ nav ul li a:hover {
 #contact form textarea {
     width: calc(100% - 10px); /* Set width to full container width */
     padding: 10px;
+    margin: 0 auto; /* Center-align the textarea */
     margin-bottom: 20px;
     border: 1px solid #ccc; /* Light gray border */
     border-radius: 5px; /* Rounded corners */
     box-sizing: border-box;
+    
 }
 
 #contact form input[type="submit"] {
