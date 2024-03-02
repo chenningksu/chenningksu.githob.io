@@ -77,6 +77,11 @@ nav ul li a:hover {
 
 /* skills Styles */
 
+#skills {
+    padding: 50px 20px;
+    text-align: center;
+}
+
 #skills-container {
     display: flex;
     width: 100%;
