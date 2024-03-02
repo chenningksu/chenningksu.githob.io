@@ -95,6 +95,46 @@ nav ul li a:hover {
     margin-top: 20px;
   }
 
+  #contact h2 {
+    text-align: center; /* Center-align the heading */
+}
+
+#contact form {
+    margin-top: 20px; /* Add space between heading and form */
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box;
+}
+
+#contact form input[type="submit"] {
+    background-color: #2980b9; /* Blue background */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+}
+
+#contact form input[type="submit"]:hover {
+    background-color: #1e67a9; /* Darker blue on hover */
+}
+
+
+
+
 /* Footer Styles */
 footer {
     text-align: center;
