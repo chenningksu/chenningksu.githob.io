@@ -75,6 +75,21 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+/* skills Styles */
+
+#skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+  
+  #skills-container > * {
+    font-size: 2em;
+    width: 2em;
+    margin-top: var(--spacing-1);
+  }
+
 /* Footer Styles */
 footer {
     text-align: center;
