@@ -116,14 +116,13 @@ nav ul li a:hover {
 
 #contact form label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Adjusted margin-bottom */
 }
 
 #contact form input[type="text"],
 #contact form input[type="email"] {
     width: calc(50% - 10px); /* Set width to half of the container width */
     padding: 10px;
-    margin-top: 5px;
     margin-bottom: 10px;
     border: 1px solid #ccc; /* Light gray border */
     border-radius: 5px; /* Rounded corners */
