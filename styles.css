@@ -123,6 +123,7 @@ nav ul li a:hover {
 #contact form input[type="email"] {
     width: calc(50% - 10px); /* Set width to half of the container width */
     padding: 10px;
+    margin-top: 5px;
     margin-bottom: 10px;
     border: 1px solid #ccc; /* Light gray border */
     border-radius: 5px; /* Rounded corners */
@@ -133,7 +134,7 @@ nav ul li a:hover {
     width: 50px; /* Set width to full container width  changed to 50px */
     padding: 10px;
     margin: 0 auto; /* Center-align the textarea */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid #ccc; /* Light gray border */
     border-radius: 5px; /* Rounded corners */
     box-sizing: border-box;
