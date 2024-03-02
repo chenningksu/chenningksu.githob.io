@@ -92,7 +92,7 @@ nav ul li a:hover {
   #skills-container > * {
     font-size: 2em;
     width: 2em;
-    margin-top: var(--spacing-1);
+    margin-top: 20px;
   }
 
 /* Footer Styles */
