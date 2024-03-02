@@ -1,3 +1,8 @@
+
+Sure! Here's the modified CSS to achieve the desired styling:
+
+css
+Copy code
 /* Reset default margin and padding */
 * {
     margin: 0;
@@ -5,33 +10,41 @@
     box-sizing: border-box;
 }
 
-/* Set body background color to blue */
+/* Set body background color to white */
 body {
-    background-color: #3498db; /* Blue color */
+    background-color: #fff; /* White color */
     font-family: Arial, sans-serif;
-    color: #fff; /* White color for text */
+    color: #000; /* Black color for text */
 }
 
 /* Navigation Menu Styles */
 nav {
-    background-color: #2980b9; /* Darker blue for navigation */
-    padding: 10px 0;
+    background-color: #2980b9; /* Blue color for navigation */
+    padding: 10px;
+    border-radius: 15px; /* Rounded corners */
 }
 
 nav ul {
     list-style: none;
-    text-align: center;
+    text-align: right; /* Align buttons to the right */
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
+    margin-left: 10px; /* Add space between buttons */
 }
 
 nav ul li a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 8px 15px;
     text-decoration: none;
     color: #fff; /* White color for links */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+nav ul li a:hover {
+    background-color: #1e67a9; /* Darker blue on hover */
 }
 
 /* Home Page Styles */
@@ -65,15 +78,8 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    nav ul li a {
-        display: block;
-        padding: 10px 0;
-    }
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
 }
