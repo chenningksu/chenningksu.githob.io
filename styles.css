@@ -83,7 +83,7 @@ nav ul li a:hover {
 }
 
 #skills-container {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -152,8 +152,6 @@ nav ul li a:hover {
 #contact form input[type="submit"]:hover {
     background-color: #1e67a9; /* Darker blue on hover */
 }
-
-
 
 
 /* Footer Styles */
