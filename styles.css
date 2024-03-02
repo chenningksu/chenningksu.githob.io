@@ -14,7 +14,7 @@ body {
 
 /* Navigation Menu Styles */
 nav {
-    background-color: #2980b9; /* Blue color for navigation */
+    background-color: #fff; /* White background */
     padding: 10px;
     border-radius: 15px; /* Rounded corners */
 }
@@ -26,20 +26,22 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-left: 10px; /* Add space between buttons */
+    margin: 0 10px; /* Add space between buttons */
 }
 
 nav ul li a {
     display: inline-block;
     padding: 8px 15px;
     text-decoration: none;
-    color: #fff; /* White color for links */
-    border-radius: 5px; /* Rounded corners for buttons */
+    color: #2980b9; /* Blue color for text */
+    border-radius: 15px; /* Rounded corners for buttons */
+    border: 1px solid #2980b9; /* Add border */
     transition: background-color 0.3s; /* Smooth transition on hover */
 }
 
 nav ul li a:hover {
-    background-color: #1e67a9; /* Darker blue on hover */
+    background-color: #2980b9; /* Blue background on hover */
+    color: #fff; /* White color on hover */
 }
 
 /* Home Page Styles */
