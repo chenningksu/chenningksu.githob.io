@@ -96,7 +96,17 @@ nav ul li a:hover {
     margin-top: 20px;
   }
 
-  #contact h2 {
+/* Contact Form Styles */
+#contact {
+    padding: 50px;
+    margin: 0 auto; /* Center-align the form */
+    max-width: 600px; /* Limit the width of the form */
+    background-color: #fff; /* White background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for raised effect */
+}
+
+#contact h2 {
     text-align: center; /* Center-align the heading */
 }
 
@@ -110,9 +120,17 @@ nav ul li a:hover {
 }
 
 #contact form input[type="text"],
-#contact form input[type="email"],
+#contact form input[type="email"] {
+    width: calc(50% - 10px); /* Set width to half of the container width */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box;
+}
+
 #contact form textarea {
-    width: 50%;
+    width: calc(100% - 10px); /* Set width to full container width */
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc; /* Light gray border */
