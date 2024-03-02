@@ -111,7 +111,7 @@ nav ul li a:hover {
 #contact form input[type="text"],
 #contact form input[type="email"],
 #contact form textarea {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc; /* Light gray border */
