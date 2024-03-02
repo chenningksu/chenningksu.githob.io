@@ -83,6 +83,7 @@ nav ul li a:hover {
 }
 
 #skills-container {
+    margin-top: 20px;
     display: flex;
     width: 100%;
     justify-content: center;
