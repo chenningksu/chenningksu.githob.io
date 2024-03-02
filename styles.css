@@ -80,7 +80,7 @@ nav ul li a:hover {
 #skills-container {
     display: flex;
     width: 100%;
-    justify-content: left;
+    justify-content: center;
     flex-wrap: wrap;
   }
   
