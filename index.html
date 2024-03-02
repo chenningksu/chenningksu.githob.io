@@ -1,95 +1,34 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1" >
-    <link href="./styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-    <title>Christopher Henning Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Henning - Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-
-    <!--The Nav Bar -->
+    <!-- Navigation Menu -->
     <nav>
-        <div>
-            <h1><a id="myName" href="index.html">Christopher Henning</a></h1>
-        </div>
-            <ul class="nav_links">
-                <li><a href="#index">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-    </nav>
-    <hr>
-
-    <!--The Dark Mode Switch-->
-    <div class="switch">
-        <label class="dark-mode">Dark Mode 
-            <input type="checkbox" id="dark-mode-toggle">
-            <div class="switch-border">
-                <div class="switch-dot"></div>
-            </div>
-        </label>
-    </div>
-
-    <!--The Main Body-->
-
-    <main>
-        <!--The Bio Section-->
-        <section class="bio" id="bio">
-            <img id="chris_headshot" src="images/BMHF8031.JPG" alt="Photo of Chris">
-            <div>
-                <h2>Hi! My name is Christopher Henning. I am a full-stack web developer.</h2>
-                <p>I have been coding since winter of 2023. I am a student of CodeCademy's Full Stack Engineer
-                    Career Path. I have expirience in web design (HTML, CSS, & JS). I am based out of Atlanta, Georgia. 
-                    In my free time I love to play guitar, shoot film photographs and travel!
-                </p>
-            </div>
-        </section>
-        <hr>
-        <section class="work" id="work">
-            <h2>Recent Projects</h2>
-                <article>
-                    <div>
-                        <h3>Auto Madlib Generator</h3>
-                        <p>A humorous message generator that randomly populates lines of code
-                            altogether in one string. </p>
-                        <strong>Feb 2024</strong>
-                        <ul>
-                            <li>Use of JavaScript and Node.js Technologies</li>
-                            <li>Designed to be opperated from the Command Line</li>
-                        </ul>
-                        <p>Visit the <a href="https://github.com/">GitHub Repo</a> for this project!</p>
-                    </div>
-                    <img id="Madlib" src="images/Auto MadLib.png" alt="Image of Auto Madlib Generator">
-                </article>
-        </section>
-        <hr>
-
-        <!--Skills Section-->
-        <section class="skills" id="skills">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-js"></i>
-                <i class="fa-brands fa-git"></i>
-                <i class="fa-solid fa-terminal"></i>
-                <i class="fa-brands fa-node"></i>
-                <i class="fa-brands fa-github"></i>
-            </div>
-        </section>
-    </main>
-    <hr>
-
-    <!--Footer Section-->
-    <footer class="contact" id="contact">
         <ul>
-            <li><a href="https://www.linkedin.com/in/christopher-henning-039ba3169/">LinkedIn</a></li>
-            <li><a href="https://github.com/">GitHub</a></li>
-
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
+    </nav>
+
+    <!-- Home Page Content -->
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <!-- Add your content representing your journey at KSU -->
+        <p>This is my portfolio page.</p>
+        <p>Feel free to explore and learn more about me!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Christopher Henning. All rights reserved.</p>
     </footer>
-<script src="scripts.js"></script>
+
+    <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>

@@ -1,237 +1,79 @@
-body {
-    background: var(--background);
-    color: var(--primary);
-    padding: 0 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 1024px;
-    margin: 0 auto;
-    box-sizing: border-box;
-
-        /*The CSS Color Variables*/
-    --dark-background: #253a53;
-    --dark-primary: #FFFFE4;
-    
-    --light-background: #FFFFE4;
-    --light-primary: #253a53;
-
-    --background: var(--light-background);
-    --primary: var(--light-primary);
-
-}
-body a:hover {
-    font-size: 1.1rem;
-    transition: font-size .1s;
-}
-hr{
-    color: var(--primary);
-}
-
-/* NAV BAR */
-
-nav {
-    display: flex;
-    top: 0;
-    justify-content: space-between
-}
-#myName {
-    display: inline;
-    font-size: 1.8rem;
-    text-decoration: none;
-    color: var(--primary);
-    width: 100%;
-    align-items: center;
-}
-#myName h1{
-    justify-content: center;
-    font-weight: 700;
-}
-
-nav ul{
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    justify-items: end;
+/* Reset default margin and padding */
+* {
+    margin: 0;
     padding: 0;
-    justify-content: space-evenly;
-}
-
-nav li {
-    display: inline;
-    float: right;
-    text-decoration: none;
-    font-weight: 750;
-    align-items: center;
-    margin-inline-end: 1px;
-    margin: 4px;
-}
-
-li a{
-    color: var(--primary);
-    text-decoration: none;
-}
-
-
-
-/* DARK MODE SWITCH */
-.switch {
-    display: flex;
-    justify-content: end;
-    padding: 1 rem 0;
-}
-
-.dark-mode {
-    display: inline-flex;
-    align-items: center;
-    font-family: sans-serif;
-    font-weight: 700;
-    font-size: .875rem;
-    cursor: pointer;
-}
-
-.switch-border {
-    display: inline-flex;
-    align-items: center;
-    width: 60px;
-    height: 36px;
-    border: 1px solid var(--primary);
-    border-radius: 20px;
     box-sizing: border-box;
-    margin-inline-start: 8px;
 }
 
-.dark-mode input {
-    display: none;
+/* Set body background color to blue */
+body {
+    background-color: #3498db; /* Blue color */
+    font-family: Arial, sans-serif;
+    color: #fff; /* White color for text */
 }
 
-.switch-dot {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background: var(--primary);
-    transform: translate3d(3px, 0, 0);
-    transition: transform .1s ease-in-out;
+/* Navigation Menu Styles */
+nav {
+    background-color: #2980b9; /* Darker blue for navigation */
+    padding: 10px 0;
 }
 
-.dark-mode input:checked + * .switch-dot{
-    transform: translate3d(26px, 0, 0);
-}
-
-
-/* BIO */
-h2 {
-    font-size: 3rem;
-}
-
-.bio p{
-    font-size: 1.2em;
-}
-
-.bio {
-    display: flex;
-    margin-bottom: 35px;
-}
-
-#chris_headshot {
-    width: 320px;
-    height: auto;
-    border-radius: 50px;
-    margin-inline-end: 4rem;
-}
-
-@media (max-width: 1024px) {
-    .bio{
-        flex-direction: column;
-        
-    }
-    h2 {
-        font-size: 2.7rem;
-    }
-    .bio #chris_headshot {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 45%;
-    }
-}
-
-
-/* WORK SECTION */
-.work {
-    padding-block-end: 3rem;
-}
-
-article {
-    display: flex;
-}
-
-.work a {
-    color: var(--primary);
-    font-weight: 700;
-}
-
-#Madlib {
-    display: flex;
-    width: 520px;
-    height: auto;
-}
-
-/*SKILLS CONTAINER*/
-
-.skills {
-    justify-items: center;
-}
-
-.skills-container{
-    font-size: 2.2em;
-    height: auto;
-    margin-bottom: 30px;
-    display: flex;
-}
-
-.skills-container i {
-    width: 1em;
-    -webkit-font-smoothing: antialiased;
-    margin: auto auto;
-}
-
-@media (max-width: 1024px) {
-    article {
-        flex-direction: column;
-    }
-    article #Madlib{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }
-    .skills
-}
-
-
-/* FOOTER SECTION */
-footer{
-    padding: 1rem 0;
+nav ul {
+    list-style: none;
     text-align: center;
 }
 
-footer ul {
-    padding: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-footer ul li {
+nav ul li {
     display: inline;
-    margin: 0 8%;
 }
 
-footer a {
-    display: inline-flex;
-    flex-direction: column;
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
     text-decoration: none;
-    font-family: sans-serif;
-    font-weight: 700;
-    align-items: center;
-    color: var(--primary);
+    color: #fff; /* White color for links */
+}
+
+/* Home Page Styles */
+#home {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* About Page Styles */
+#about {
+    padding: 50px 20px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Contact Page Styles */
+#contact {
+    padding: 50px 20px;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 0;
+    }
 }
