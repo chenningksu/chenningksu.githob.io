@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function isEmailValid(email) {
         // Regular expression for validating email format
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  //Typical Regex used for email
         return emailRegex.test(email);
     }
 });
