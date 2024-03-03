@@ -24,3 +24,12 @@ toggle.addEventListener('click', () => {
     bodyCssProps.set('--background', bodyCssProps.get(`--${mode}-background`));
     bodyCssProps.set('--primary', bodyCssProps.get(`--${mode}-primary`));
 });
+/* This is to hide text */
+function toggleVisibility() {
+    var textElement = document.getElementById("text");
+    if (textElement.style.display === "none") {
+        textElement.style.display = "block";
+    } else {
+        textElement.style.display = "none";
+    }
+}
