@@ -12,7 +12,7 @@ class CssPropControl {
 
 const bodyCssProps = new CssPropControl(document.body);
 
-let toggle = document.querySelector('#dark-mode-toggle');
+let toggle = document.querySelector('#dark-mode-toggle'); // Never heard back from Satya if this is allowed //
 
 toggle.addEventListener('click', () => {
     let mode
