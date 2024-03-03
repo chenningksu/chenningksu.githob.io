@@ -55,6 +55,18 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+/* Me Page section */
+#me  {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#me h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
 /* About Page Styles */
 #about {
     padding: 50px 20px;
