@@ -179,7 +179,6 @@ nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-    position: fixed;
     text-align: center;
     bottom: 0;  /* makes it stay at bottom */
     padding: 20px 0;
